@@ -169,9 +169,10 @@ export default function App() {
 
     setUrlError("");
     setIsGenerating(true);
-
+    
     try {
-      const response = await fetch("/api/generate", {
+      // @ts-ignore
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/generate`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
