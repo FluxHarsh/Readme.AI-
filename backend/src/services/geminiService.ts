@@ -3,6 +3,7 @@ import { GoogleGenAI } from "@google/genai";
 let genAI: GoogleGenAI | null = null;
 
 function getGenAI() {
+
   if (!genAI) {
     genAI = new GoogleGenAI({
       apiKey: process.env.GEMINI_API_KEY!,
@@ -10,7 +11,9 @@ function getGenAI() {
   }
   return genAI;
 }
+
 console.log("got api key");
+
 //@ts-ignore
 export async function generateReadme(repoData) {
   const ai = getGenAI();

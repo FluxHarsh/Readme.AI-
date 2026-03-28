@@ -15,6 +15,15 @@ app.use(cors({
 app.use(express.json());
 app.use('/api',readmeRoutes)
 
+
+// added due to gemini ai received many reequests 
+
+app.use('/api', (req, res) => {
+  res.status(503).json({ 
+    error: "Service temporarily unavailable due to heavy usage. Free README generation has been paused." 
+  });
+});
+
 const PORT = 3001
 
 app.listen(PORT, ()=>{
