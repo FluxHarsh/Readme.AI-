@@ -182,7 +182,7 @@ export default function App() {
 
       if (!response.ok) {
         // throw new Error("Failed to generate README");
-          throw new Error("🚧 Service temporarily unavailable due to heavy usage. Free README generation has been paused.");
+          throw new Error("Service temporarily unavailable due to heavy usage. Free README generation has been paused.");
 
       }
 
@@ -192,7 +192,7 @@ export default function App() {
     } catch (error) {
       console.error(error);
       // setUrlError("Failed to generate README. Please try again.");
-        setUrlError("🚧 Service temporarily unavailable due to heavy usage. Free README generation has been paused.");
+        setUrlError("Service temporarily unavailable due to heavy usage. Free README generation has been paused.");
 
     } finally {
       setIsGenerating(false);
