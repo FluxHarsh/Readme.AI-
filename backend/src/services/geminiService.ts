@@ -40,7 +40,7 @@ Repository Information:
 ${JSON.stringify(repoData, null, 2)}
 
 Follow these rules strictly:
-- Use emojis for section headings to make it visually appealing
+- Use emojis for section headings to make it visually appealing don't use excessive emojis at everyline only use minimal emojis
 - Add relevant shields.io badges at the top (language, license, stars, forks, PRs welcome)
 - Write a compelling, detailed project description (3-4 sentences)
 - Include a "Table of Contents" section with anchor links
