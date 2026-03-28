@@ -13,7 +13,9 @@ app.use(cors({
   origin: '*'  
 }));
 app.use(express.json());
-app.use('/api',readmeRoutes)
+
+//commenting this out due to heavy usage
+// app.use('/api',readmeRoutes)
 
 
 // added due to gemini ai received many reequests 
